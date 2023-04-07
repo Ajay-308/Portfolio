@@ -153,20 +153,18 @@
     </section>
     <section class="contact" id ="contact">
         <h2 class="heading">Contact <span>Me</span></h2>
-
-        <form onsubmit="sendEmail()">
-            <div class="input-box">
-                <input type="text" id ="name" placeholder="full name">
-                <input type="email" id="email" placeholder="email adress">
-            </div>
-            <div class="input-box">
-                <input type="number" id="number" placeholder="Mobile number">
-                <input type="text"  id="subject"placeholder="email subject">
-            </div>
-
-            <textarea name="" id="message" cols="30" rows="10" placeholder="message"></textarea>
-            <input type="submit" value="send message" class="btn">
-
+        <form action="https://formspree.io/f/xoqzpanb"
+            method="POST" class="contact-form">
+            <label class="input-box">
+               <input type="text" placeholder="name">
+               <input type="text" placeholder="email">
+            </label>
+            <label class="input-box">
+                <input type="number" placeholder="number">
+                <textarea name="message" placeholder="send your query" class="send"></textarea>
+            </label>
+  <!-- your other form fields go here -->
+            <input type="submit" class="btn" value="send message"> </button>
         </form>
     </section>
 
@@ -182,30 +180,6 @@
     <script src="https://unpkg.com/scrollreveal"></script>
 </body>
 <script src="script.js"></script>
-<script>
-    function sendEmail(){
-        let name = document.querySelector('#name').value;
-        let email = document.querySelector('#email').value;
-        let subject = document.querySelector('#subject').value;
-        let message = document.querySelector('#message').value;
-        let number = document.querySelector('#number').value;
 
-
-       let body ='name:' + name + '<br>email'+email+'<br> subject:' +'<br>message:'+message +'<br> number'+number;
-       Email.send({
-           Host : "smtp.elasticemail.com",
-           Username : "r6839601@gmail.com",
-           Password : "ROCK@123",
-           To : 'ajay3008rock@gmail.com',
-           From : document.getElementById('email').value,
-           Subject : "About enquery",
-           Body : body
-           }).then(
-           message => alert(message)
-        );
-
-    }
-
-</script>
 
 </html>
