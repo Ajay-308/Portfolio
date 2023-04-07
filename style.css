@@ -401,6 +401,9 @@ span{
     .navbar a{
         display: block;
         font-size: 2rem;
+        margin-left: 36rem;
+        width:50%;
+        padding: .6rem;
 
     }
     .home{
