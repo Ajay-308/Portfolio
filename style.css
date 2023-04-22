@@ -446,6 +446,8 @@ span{
     html{
         font-size:50%;
     }
+    .navbar a{
+        margin-right:2rem;
     .contact-form .input-box input{
         width: 100%;
     }
