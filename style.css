@@ -419,7 +419,7 @@ span{
     .home img{
         width: 50vw;
         margin-top: 4rem;
-        margin-right: 12rem;
+        margin-right: 20rem;
     }
     .about{
         flex-direction: column;
@@ -427,6 +427,7 @@ span{
     .about-img{
         width: 50vw;
         margin-top:4rem ;
+        display:none;
     }
     .Portfolio h2{
         margin-bottom: 3rem;
