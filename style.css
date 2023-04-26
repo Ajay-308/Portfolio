@@ -422,7 +422,7 @@ span{
     .home img{
         width: 50vw;
         margin-top: 4rem;
-        margin-right: 20rem;
+        margin-right: 2rem;
     }
     .about{
         flex-direction: column;
